@@ -1,0 +1,5 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Unknown at-rule. nastroykadan shu narsani igoneriga o'zgartirib qo'ysa  tailwindni twepadagi uchta css linkida hato ko'rsatmeydi bundan boshqa tailwind darslarimda shu joyi hato berib turipti */

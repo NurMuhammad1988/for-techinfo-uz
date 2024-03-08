@@ -9,7 +9,7 @@ app.use(cors())
 app.use(express.json())
 
 app.get('/', (req, res) => {
-    res.send("Blog server is runninggg!")
+    res.send("Blog server is runningggsss!")
 });
 
 app.get('/blogs', (req, res) => {
@@ -26,3 +26,11 @@ app.get('/blogs/:id', (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
+
+//nodemon ishlatganda browserga to'g'ridan to'g'ri o'tmas ekan nodemon yuklanganda pastida link berarkan localhostda o'sha linkni browserga kirgizgandan keyin react app loyiha ochdi serverda
+
+//server qismi bor filini ichiga vite + tailwind ramkasi (faili) skachat qilindi
+
+//server qismi nodemon va npm start bilan ishga tushadi
+
+//server qismini ichidagi vite+tailwind file yani react-blog-website npm run dev bilan ishga tushadi

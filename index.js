@@ -33,4 +33,4 @@ app.listen(port, () => {
 
 //server qismi nodemon va npm start bilan ishga tushadi
 
-//server qismini ichidagi vite+tailwind file yani react-blog-website npm run dev bilan ishga tushadi
+//server qismini ichidagi vite+tailwind file yani react-blog-website npm run dev bilan ishga tushadi chunki bu vite

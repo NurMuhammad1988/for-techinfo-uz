@@ -1,4 +1,5 @@
 import React from "react";
+import BlogPages from "../conponents/BlogPages";
 
 const Blogs = () => {
     return (
@@ -7,6 +8,10 @@ const Blogs = () => {
                 <h2 className="text-5xl lg:text-7xl leading-snug font-bold mb-5">
                     Blog Page
                 </h2>
+            </div>
+            {/* all blogs container*/}
+            <div className="max-w-7xl mx-auto">
+              <BlogPages/>
             </div>
         </div>
     );

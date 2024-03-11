@@ -11,7 +11,7 @@ const Blogs = () => {
             </div>
             {/* all blogs container*/}
             <div className="max-w-7xl mx-auto">
-              <BlogPages/>
+                <BlogPages />
             </div>
         </div>
     );

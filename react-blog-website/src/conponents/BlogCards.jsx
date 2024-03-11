@@ -3,7 +3,11 @@ import { Link } from "react-router-dom";
 import { FaUser } from "react-icons/fa";
 
 const BlogCards = ({ blogs, currentPage, selectedCategory, pageaSize }) => {
-    const filtredBlogs = blogs.filter((blogs) => !selectedCategory || blogs.catecory === selectedCategory);
+    const filtredBlogs = blogs
+        .filter(
+            (blogs) => !selectedCategory || blogs.catecory === selectedCategory
+        )
+        .slice((currentPage - 1) * pageaSize, currentPage * pageaSize);
     console.log(filtredBlogs);
     return (
         <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 ">
@@ -37,4 +41,4 @@ const BlogCards = ({ blogs, currentPage, selectedCategory, pageaSize }) => {
 
 export default BlogCards;
 
-// 1:59:33 chi minutda qoldi lekin blogpages blogcardsda qilingan ishlarni yahshilab tushunib coment yozib chiqish shart!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// blogs blogpages blogcards Paginationda qilingan ishlarni yahshilab tushunib coment yozib chiqish shart!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

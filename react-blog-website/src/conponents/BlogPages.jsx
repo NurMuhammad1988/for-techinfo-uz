@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import BlogCards from "./BlogCards";
+import Pagination from "./Pagination";
+import CategorySelection from "./CategorySelection";
 
 const BlogPages = () => {
     const [blogs, setBlogs] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
-    const pageaSize = 12; //blogs per page
+    const pageaSize = 12; //blogs per page // shu cod sabab asosiy sahifaga serverdan faqat 12 ta malumot chaqirildi
     const [selectedCategory, setSelectedCategory] = useState(null);
     const [activeCategory, setActiveCategory] = useState(null);
     useEffect(() => {
@@ -39,15 +41,33 @@ const BlogPages = () => {
     return (
         <div>
             {/* catigory section */}
-            <div>Page Caticory</div>
+            <div>
+                <CategorySelection
+                    onSelectCategory={handleCategoryChange}
+                    selectedCategory={selectedCategory}
+                    activeCategory={activeCategory}
+                />
+            </div>
 
             {/* blogCrds section */}
             <div>
-                <BlogCards blogs={blogs} currentPage={currentPage} selectedCategory={selectedCategory} pageaSize={pageaSize} />
+                <BlogCards
+                    blogs={blogs}
+                    currentPage={currentPage}
+                    selectedCategory={selectedCategory}
+                    pageaSize={pageaSize}
+                />
             </div>
 
             {/* pagination section */}
-            <div>Pagination</div>
+            <div>
+                <Pagination
+                    onPageChange={handlePageChange}
+                    currentPage={currentPage}
+                    blogs={blogs}
+                    pageaSize={pageaSize}
+                />
+            </div>
         </div>
     );
 };

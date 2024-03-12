@@ -4,7 +4,8 @@ const Footer = () => {
     return (
         <div className="bg-gray-900">
             <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-4">
-                <div>
+
+                <div className="grid mb-8 lg:grid-cols-6">
                     <div className="grid grid-cols-2 gap-5 lg:col-span-4 md:grid-cols-4">
                         {/* category 1*/}
                         <div>
@@ -209,12 +210,14 @@ const Footer = () => {
                             </ul>
                         </div>
 
+                    </div>
+
                            {/* subscription*/}
-                           <div>
+                           <div className="md:max-w-md lg:col-span-2 lg:mt-0 mt-5">
                             <p className="font-medium tracking-wide text-gray-300">
                                Subscribe for updates
                             </p>
-                            <ul className="mt-2 space-y-2">
+                            {/* <ul className="mt-2 space-y-2">
                                 <li>
                                     <a
                                         className="text-gray-500 transition-colors duration-300 hover:text-orange-500"
@@ -259,10 +262,14 @@ const Footer = () => {
                                         Projects
                                     </a>
                                 </li>
-                            </ul>
-                        </div>
+                            </ul> */}
 
-                    </div>
+
+
+
+
+                            {/* 3:07:24 chi minutda qoldi */}
+                        </div>
                 </div>
             </div>
         </div>

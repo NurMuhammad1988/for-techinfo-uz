@@ -36,6 +36,9 @@ const BlogCards = ({ blogs, currentPage, selectedCategory, pageaSize }) => {
                 </Link>
             ))}
         </div>
+
+
+
     );
 };
 

@@ -516,7 +516,7 @@
         "tags": ["Startups", "Writing"]
     },
     {
-        "id": 46,
+        "id": 45,
         "title": "Ten Key Labs wants to simplify managing equity for startups",
         "image": "https://techcrunch.com/wp-content/uploads/2022/09/GettyImages-1359478309.jpg?w=430&h=230&crop=1",
         "category": "Startups",
@@ -528,7 +528,7 @@
         "tags": ["Startups", "Writing"]
     },
     {
-        "id": 47,
+        "id": 46,
         "title": "HCVC is back with a new $75 million deep tech fund",
         "image": "https://techcrunch.com/wp-content/uploads/2023/10/HCVC-team.jpg?w=430&h=230&crop=1",
         "category": "Startups",
@@ -540,7 +540,7 @@
         "tags": ["Startups", "Writing"]
     },
     {
-        "id": 482,
+        "id": 47,
         "title": "Cloaked manages your logins with proxy emails, phone numbers and a built-in password manager",
         "image": "https://techcrunch.com/wp-content/uploads/2023/09/Cloaked-Privacy-2.jpeg?w=430&h=230&crop=1",
         "category": "Apps",
@@ -552,7 +552,7 @@
         "tags": ["Startups", "Writing"]
     },
     {
-        "id": 499,
+        "id": 47,
         "title": "Unitary AI picks up $15M for its multimodal approach to video content moderation",
         "image": "https://techcrunch.com/wp-content/uploads/2023/10/Screenshot-2023-10-03-at-01.44.37.png?w=430&h=230&crop=1",
         "category": "Health",
@@ -564,7 +564,7 @@
         "tags": ["Startups", "Writing"]
     },
     {
-        "id": 50,
+        "id": 47,
         "title": "Tesla Autopilot arbitration win could set legal benchmark in auto industry",
         "image": "https://techcrunch.com/wp-content/uploads/2023/06/GettyImages-1494766819.jpg?w=430&h=230&crop=1",
         "category": "Tech",
@@ -600,7 +600,7 @@
         "tags": ["Startups", "Writing"]
     },
     {
-        "id": 501,
+        "id": 50,
         "title": "Google Pixel 8 Pro first impressions",
         "image": "https://techcrunch.com/wp-content/uploads/2023/10/Google-Pixel-8-Pro-Bay-04.jpg?w=430&h=230&crop=1",
         "category": "Gadgets",
@@ -973,7 +973,7 @@
     },
     {
         "id": 1,
-        "title": "Meta debuts generative AI features for advertisersss",
+        "title": "Meta debuts generative AI features for advertisers",
         "image": "https://techcrunch.com/wp-content/uploads/2023/10/meta-gen-ai-ads.jpg?w=430&h=230&crop=1",
         "category": "AI",
         "author": "Sarah Perez",
@@ -997,78 +997,6 @@
     },
     {
         "id": 81,
-        "title": "In latest Cruise incident, video shows pedestrian struck by human-driven car, then run over by robotaxi",
-        "image": "https://techcrunch.com/wp-content/uploads/2022/10/Cruise_700848.jpg?w=430&h=230&crop=1",
-        "category": "Security",
-        "author": "Rebecca Bellan",
-        "authorPic": "author1.jpg",
-        "published_date": "2023-10-01",
-        "reading_time": "6 minutes",
-        "content": "The San Francisco Police Department is investigating an October 2 incident that left a woman stuck underneath a Cruise robotaxi after being hit by a human-driven vehicle. Video captured by Cruise a...",
-        "tags": ["Startups", "Writing"]
-    },
-
-    {
-        "id": 811,
-        "title": "In latest Cruise incident, video shows pedestrian struck by human-driven car, then run over by robotaxi",
-        "image": "https://techcrunch.com/wp-content/uploads/2022/10/Cruise_700848.jpg?w=430&h=230&crop=1",
-        "category": "Security",
-        "author": "Rebecca Bellan",
-        "authorPic": "author1.jpg",
-        "published_date": "2023-10-01",
-        "reading_time": "6 minutes",
-        "content": "The San Francisco Police Department is investigating an October 2 incident that left a woman stuck underneath a Cruise robotaxi after being hit by a human-driven vehicle. Video captured by Cruise a...",
-        "tags": ["Startups", "Writing"]
-    },   {
-        "id": 812,
-        "title": "In latest Cruise incident, video shows pedestrian struck by human-driven car, then run over by robotaxi",
-        "image": "https://techcrunch.com/wp-content/uploads/2022/10/Cruise_700848.jpg?w=430&h=230&crop=1",
-        "category": "Security",
-        "author": "Rebecca Bellan",
-        "authorPic": "author1.jpg",
-        "published_date": "2023-10-01",
-        "reading_time": "6 minutes",
-        "content": "The San Francisco Police Department is investigating an October 2 incident that left a woman stuck underneath a Cruise robotaxi after being hit by a human-driven vehicle. Video captured by Cruise a...",
-        "tags": ["Startups", "Writing"]
-    },
-    {
-        "id": 8112,
-        "title": "In latest Cruise incident, video shows pedestrian struck by human-driven car, then run over by robotaxi",
-        "image": "https://techcrunch.com/wp-content/uploads/2022/10/Cruise_700848.jpg?w=430&h=230&crop=1",
-        "category": "Security",
-        "author": "Rebecca Bellan",
-        "authorPic": "author1.jpg",
-        "published_date": "2023-10-01",
-        "reading_time": "6 minutes",
-        "content": "The San Francisco Police Department is investigating an October 2 incident that left a woman stuck underneath a Cruise robotaxi after being hit by a human-driven vehicle. Video captured by Cruise a...",
-        "tags": ["Startups", "Writing"]
-    },   {
-        "id": 811,
-        "title": "In latest Cruise incident, video shows pedestrian struck by human-driven car, then run over by robotaxi",
-        "image": "https://techcrunch.com/wp-content/uploads/2022/10/Cruise_700848.jpg?w=430&h=230&crop=1",
-        "category": "Security",
-        "author": "Rebecca Bellan",
-        "authorPic": "author1.jpg",
-        "published_date": "2023-10-01",
-        "reading_time": "6 minutes",
-        "content": "The San Francisco Police Department is investigating an October 2 incident that left a woman stuck underneath a Cruise robotaxi after being hit by a human-driven vehicle. Video captured by Cruise a...",
-        "tags": ["Startups", "Writing"]
-    },
-    {
-        "id": 8111,
-        "title": "In latest Cruise incident, video shows pedestrian struck by human-driven car, then run over by robotaxi",
-        "image": "https://techcrunch.com/wp-content/uploads/2022/10/Cruise_700848.jpg?w=430&h=230&crop=1",
-        "category": "Security",
-        "author": "Rebecca Bellan",
-        "authorPic": "author1.jpg",
-        "published_date": "2023-10-01",
-        "reading_time": "6 minutes",
-        "content": "The San Francisco Police Department is investigating an October 2 incident that left a woman stuck underneath a Cruise robotaxi after being hit by a human-driven vehicle. Video captured by Cruise a...",
-        "tags": ["Startups", "Writing"]
-    },
-
-    {
-        "id": 81111,
         "title": "In latest Cruise incident, video shows pedestrian struck by human-driven car, then run over by robotaxi",
         "image": "https://techcrunch.com/wp-content/uploads/2022/10/Cruise_700848.jpg?w=430&h=230&crop=1",
         "category": "Security",

@@ -3,7 +3,7 @@ import BlogCards from "./BlogCards";
 import Pagination from "./Pagination";
 import CategorySelection from "./CategorySelection";
 
-const BlogPages = () => {
+const BlogPage = () => {
     const [blogs, setBlogs] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const pageaSize = 12; //blogs per page // shu cod sabab asosiy sahifaga serverdan faqat 12 ta malumot chaqirildi
@@ -40,7 +40,7 @@ const BlogPages = () => {
 
     return (
         <div>
-            {/* catigory section */}
+            {/* category section */}
             <div>
                 <CategorySelection
                     onSelectCategory={handleCategoryChange}
@@ -72,4 +72,4 @@ const BlogPages = () => {
     );
 };
 
-export default BlogPages;
+export default BlogPage;

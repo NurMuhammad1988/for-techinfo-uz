@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 import { FaUser } from "react-icons/fa";
 
 const BlogCards = ({ blogs, currentPage, selectedCategory, pageaSize }) => {
-    const filtredBlogs = blogs
+    const filteredBlogs = blogs
         .filter(
-            (blogs) => !selectedCategory || blogs.catecory === selectedCategory
+            (blogs) => !selectedCategory || blogs.category === selectedCategory
         )
         .slice((currentPage - 1) * pageaSize, currentPage * pageaSize);
-    console.log(filtredBlogs);
+    console.log(filteredBlogs);
     return (
         <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 ">
-            {filtredBlogs.map((blog) => (
+            {filteredBlogs.map((blog) => (
                 <Link
                     className="p-5 shadow-lg rounded cursor-pointer hover:bg-slate-200"
                     key={blog.id}
@@ -40,5 +40,7 @@ const BlogCards = ({ blogs, currentPage, selectedCategory, pageaSize }) => {
 };
 
 export default BlogCards;
+
+/////////////////////////////////2:35:37 inchi minutda qoldi
 
 // blogs blogpages blogcards Paginationda qilingan ishlarni yahshilab tushunib coment yozib chiqish shart!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

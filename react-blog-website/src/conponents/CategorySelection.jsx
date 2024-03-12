@@ -5,20 +5,21 @@ const CategorySelection = ({ onSelectCategory, activeCategory }) => {
 
     return (
         <div>
-            <button>ALL</button>
-            {categories.map((catecory) => (
+            <button onClick={() => onSelectCategory(null)}>ALL</button>
+            {categories.map((category) => (
                 <button
-                    onClick={() => onSelectCategory(catecory)}
+                    onClick={() => onSelectCategory(category)}
                     className={`mr-2 space-x-16 ${
-                        activeCategory === catecory ? "active-button" : ""
+                        activeCategory === category ? "active-button" : ""
                     }`}
-                    key={catecory}
+                    key={category}
                 >
-                    {catecory}
+                    {category}
                 </button>
             ))}
         </div>
     );
 };
+
 
 export default CategorySelection;

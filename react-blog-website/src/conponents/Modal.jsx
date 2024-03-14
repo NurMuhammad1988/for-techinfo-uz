@@ -19,8 +19,8 @@ const Modal = ({ isOpen, onClose }) => {
                             <input
                                 className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6b7280] outline-none focus:border-[#6a64f1] focus:shadow-md"
                                 type="email"
-                                name="email"
-                                id="email"
+                                // name="email"
+                                // id="email"
                                 placeholder="example@gmail.com"
                             />
                         </div>
@@ -28,9 +28,9 @@ const Modal = ({ isOpen, onClose }) => {
                         <div className="mb-5">
                             <input
                                 className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6b7280] outline-none focus:border-[#6a64f1] focus:shadow-md"
-                                type="password"
-                                name="password"
-                                id="password"
+                                type="current-password"
+                                // name="password"
+                                // id="password"
                                 placeholder="Enter your password"
                             />
                         </div>
@@ -43,7 +43,10 @@ const Modal = ({ isOpen, onClose }) => {
                     </form>
 
                     {/* modal close btn */}
-                    <button onClick={onClose} className="bg-gray-300 hover:bg-gray-400 text-gray-800  font-semibold py-2 px-8 rounded inline-flex items-center mt-5">
+                    <button
+                        onClick={onClose}
+                        className="bg-gray-300 hover:bg-gray-400 text-gray-800  font-semibold py-2 px-8 rounded inline-flex items-center mt-5"
+                    >
                         Close
                     </button>
                 </div>

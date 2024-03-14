@@ -21,16 +21,16 @@ const SingleBlog = () => {
     // console.log(data);//blogslarga id berishdan oldin consoleda ko'rish uchunyozildi yani linkga o'tadi lekin ekranda ko'rinmeydi
 
     return (
-        <div>
-            <div className="py-40 bg-black text-center text-white px-4">
+        <div className="pt-14">
+            {/* <div className="py-40 bg-black text-center text-white px-4">
                 <h2 className="text-5xl lg:text-7xl leading-snug font-bold mb-5">
                     Single Blog Page
                 </h2>
-            </div>
+            </div> */}
 
             {/* blog details */}
 
-            <div className="max-w-7xl mx-auto my-12 flex flex-col md:flex-row gap-12">
+            <div className="max-w-7xl mx-auto my-12 flex flex-col md:flex-row gap-12 ">
                 <div className="lg:w-3/4 mx-auto">
                   {/* home yoki blog pagedan bloglarni ustiga bosganda ichiga kirish kodi shu fileda kodni tushunish uchun yuqoridagi SingleBlog funcsiyasiga qaralsin  */}
                     <div>

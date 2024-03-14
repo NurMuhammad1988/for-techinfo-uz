@@ -12,6 +12,7 @@ import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import Services from "./pages/Services.jsx";
 import SingleBlog from "./pages/SingleBlog.jsx";
+import AboutUs from "./conponents/AboutUs.jsx";
 
 const router = createBrowserRouter([
     {
@@ -46,6 +47,11 @@ const router = createBrowserRouter([
                 loader: ({ params }) =>
                     fetch(`http://localhost:5001/blogs/${params.id}`),
                 // blogslarga bosganda linkga o'tish `/blogs/${blogs.id}` bu blogcardda yozilgan
+            },
+
+            {
+                path: "/us",
+                element: <AboutUs />,
             },
         ],
     },

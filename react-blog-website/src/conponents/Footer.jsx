@@ -5,7 +5,7 @@ import { BsTwitterX } from "react-icons/bs";
 const Footer = () => {
     return (
         <div className="bg-gray-900">
-            <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-4">
+            <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-4 ">
                 <div className="grid mb-8 lg:grid-cols-6">
                     <div className="grid grid-cols-2 gap-5 lg:col-span-4 md:grid-cols-4">
                         {/* category 1*/}
@@ -290,7 +290,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-col justify-between pt-8 pb-10 border-t border-gray-800 sm:flex-row ">
+                <div className="flex flex-col justify-between pt-8 pb-10 border-t border-gray-800 sm:flex-row">
                     <p className="text-sm text-gray-500">
                         © Copyriht 2024 | All right resereved.
                     </p>

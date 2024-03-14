@@ -12,7 +12,9 @@ const BlogCards = ({ blogs, currentPage, selectedCategory, pageaSize }) => {
     return (
         <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 ">
             {filteredBlogs.map((blog) => (
-                <Link
+
+                // blogslarga bosganda linkga o'tish `/blogs/${blogs.id}` bu react router domda yozilgan
+                <Link to={`/blogs/${blog.id}`}
                     className="p-5 shadow-lg rounded cursor-pointer hover:bg-slate-200"
                     key={blog.id}
                 >

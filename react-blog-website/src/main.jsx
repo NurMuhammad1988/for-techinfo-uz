@@ -11,6 +11,7 @@ import Blogs from "./pages/Blogs.jsx";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import Services from "./pages/Services.jsx";
+import SingleBlog from "./pages/SingleBlog.jsx";
 
 const router = createBrowserRouter([
     {
@@ -22,21 +23,29 @@ const router = createBrowserRouter([
                 element: <Home />,
             },
             {
-                path:"/blogs",
-                element:<Blogs/>
+                path: "/blogs",
+                element: <Blogs />,
             },
             {
-                path:"/about",
-                element:<About/>
+                path: "/about",
+                element: <About />,
             },
             {
-                path:"/contact",
-                element:<Contact/>
+                path: "/contact",
+                element: <Contact />,
             },
 
             {
-                path:"/services",
-                element:<Services/>
+                path: "/services",
+                element: <Services />,
+            },
+
+            {
+                path: "/blogs/:id",
+                element: <SingleBlog />,
+                loader: ({ params }) =>
+                    fetch(`http://localhost:5001/blogs/${params.id}`),
+                // blogslarga bosganda linkga o'tish `/blogs/${blogs.id}` bu blogcardda yozilgan
             },
         ],
     },
@@ -46,7 +55,7 @@ const router = createBrowserRouter([
 
 //
 
-//childernni ichiga qo'yilgan componentlarni brawser ochadi bo'masa yoq chunki bu oddiy reactdagi app ni ichida turganday gap yani App ni o'zigaham chaqirib qo'yish kerak yani bu app.jsx ni ichiga childernlarini router qilish 
+//childernni ichiga qo'yilgan componentlarni brawser ochadi bo'masa yoq chunki bu oddiy reactdagi app ni ichida turganday gap yani App ni o'zigaham chaqirib qo'yish kerak yani bu app.jsx ni ichiga childernlarini router qilish
 
 //childernni ichiga yangi component elemnga yozilganda yoqoroga import qilinishi kerak odatda aftamatik tarzda import bo'ladi
 

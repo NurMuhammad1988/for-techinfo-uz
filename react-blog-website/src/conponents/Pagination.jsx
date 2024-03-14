@@ -29,7 +29,7 @@ const Pagination = ({ onPageChange, currentPage, blogs, pageaSize }) => {
                     Previous
                 </button>
             </li>
-            <div className="flex gap-1"> {renderPaginationLinks()} </div>
+            <div className="flex gap-1 flex-wrap"> {renderPaginationLinks()} </div>
             <li>
                 <button
                     onClick={() => onPageChange(currentPage + 1)}

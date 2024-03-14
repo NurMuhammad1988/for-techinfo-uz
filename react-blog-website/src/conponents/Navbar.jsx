@@ -7,9 +7,11 @@ import {
     FaTwitter,
     FaXmark,
 } from "react-icons/fa6";
+import Modal from "./Modal";
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(false);
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
@@ -21,7 +23,19 @@ const Navbar = () => {
         { path: "/blogs", link: "Blogs" },
         { path: "/contact", link: "Contact" },
     ];
+
     //yuqoridagi navLinks o'zgaruvchini ichiga path va link bilan srcni ichidagi main.jsx failida roterga o'ralgan link'arni chaqirvoldik va pastda map qilib lini ichiga kerakli joyga qo'ydik mapni ichida NavLink tegi bor bu NavLink tegi rect router domni linklar uchun mahsus tegi yani pathlar va linklar shu tegni ichiga o'ralishi kerak NavLink tegini o'zini mahsus stylelari bor linkga moslashgan shunda browser taniydi buni link ekanligini
+
+    //modal details
+
+    const openModal = () => {
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
+
     return (
         <header className="bg-black text-white fixed top-0 left-0 right-0">
             <nav className="px-4 py-4 max-w-7xl mx-auto flex justify-between items-center">
@@ -33,13 +47,18 @@ const Navbar = () => {
                 <ul className="md:flex gap-12 text-lg hidden">
                     {NavItems.map(({ path, link }) => (
                         <li key={path} className="text-white">
-                            <NavLink className={({ isActive, isPending }) =>
-                      isActive
-                        ? "active"
-                        : isPending
-                        ? "pending"
-                        : ""
-                    } to={path}>{link}</NavLink>
+                            <NavLink
+                                className={({ isActive, isPending }) =>
+                                    isActive
+                                        ? "active"
+                                        : isPending
+                                        ? "pending"
+                                        : ""
+                                }
+                                to={path}
+                            >
+                                {link}
+                            </NavLink>
                         </li>
                     ))}
                 </ul>
@@ -54,10 +73,13 @@ const Navbar = () => {
                     <a className="hover:text-orange-500" href="/">
                         <FaTwitter />
                     </a>
-                    <button className="bg-orange-500 px-6 py-2 font-medium rounded hover:bg-white hover:text-orange-500 transition-all duration-200 ease-in">
+                    <button onClick={openModal} className="bg-orange-500 px-6 py-2 font-medium rounded hover:bg-white hover:text-orange-500 transition-all duration-200 ease-in">
                         Log in
                     </button>
                 </div>
+
+                {/* our modal component is here */}
+                <Modal isOpen={isModalOpen} onClose={closeModal}/>
 
                 {/* mobile mune btn display mobile screen */}
                 <div className="md:hidden">
@@ -83,7 +105,9 @@ const Navbar = () => {
                     {/* ${isMenuOpen ? "fixed top-0 left-0 w-full transition-all ease-out duration-150" : "hidden"  yani togleni if elsi shu kod bilan ochilib yopiladi ul ni ichidagi menu yani faqat mobil formatda*/}
                     {NavItems.map(({ path, link }) => (
                         <li key={path} className="text-black">
-                            <NavLink onClick={toggleMenu} to={path}>{link}</NavLink>
+                            <NavLink onClick={toggleMenu} to={path}>
+                                {link}
+                            </NavLink>
                         </li>
                     ))}
                 </ul>

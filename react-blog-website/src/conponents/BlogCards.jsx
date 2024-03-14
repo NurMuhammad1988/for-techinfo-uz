@@ -46,6 +46,6 @@ const BlogCards = ({ blogs, currentPage, selectedCategory, pageaSize }) => {
 
 export default BlogCards;
 
-/////////////////////////////////2:35:37 inchi minutda qoldi
+/////////////////////////////////2:35:37 chi minutda qoldi
 
 // blogs blogpages blogcards Paginationda qilingan ishlarni yahshilab tushunib coment yozib chiqish shart!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
